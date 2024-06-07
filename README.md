@@ -46,8 +46,9 @@ For a seamless experience, you can set up these scripts to run automatically usi
 3. Set the Shell to /bin/bash and Pass input to as arguments.
 4. In the script area, enter the path to your script. For example:
 
-python3 /path/to/your/file-organizer-scripts/organization.py
-python3 /path/to/your/file-organizer-scripts/clean.py
+      ```bash
+      python3 /path/to/your/file-organizer-scripts/organization.py
+      python3 /path/to/your/file-organizer-scripts/clean.py
 
 5. Save the Automator application.
 You can now run these scripts by double-clicking the Automator application.
