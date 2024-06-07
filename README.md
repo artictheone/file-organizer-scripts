@@ -27,13 +27,14 @@ The Clean Script cleans up empty folders in the "Archive" folders of your Deskto
     source venv/bin/activate
 
 3. **Make the scripts executable**:
+
+     ```bash
     chmod +x organizacion.py clean.py
 
 ## Usage
 Running the Scripts Manually
 To run the scripts, use the following commands in your terminal:
 
-      ```bash
       python3 organizacion.py
       python3 clean.py
 
