@@ -1,11 +1,56 @@
 # File Organizer Scripts
 
-## Organization Script (`organization.py`)
+## Overview
 
-The Organization Script is a Python script that helps to organize files and folders on your computer. It takes two folders, Desktop and Downloads, and moves their contents to an "Archive" folder with the current date. The script skips alias files and folders, and renames files with the same name by adding a "_1" suffix. The script also logs its progress and any errors that occur during the organization process.
+This repository contains two Python scripts that help to keep your computer organized and clutter-free by moving files and folders to an "Archive" folder and removing empty folders.
 
-## Clean Script (`clean.py`)
+## Scripts
 
-The Clean Script is a Python script that cleans up empty folders in the "Archive" folders of your Desktop and Downloads folders. It walks through the folder tree, checks for empty folders, and moves them to the trash. The script logs its progress and any errors that occur during the cleaning process.
+### Organization Script (`organization.py`)
 
-Together, these two scripts help to keep your computer organized and clutter-free by moving files and folders to an "Archive" folder and removing empty folders.
+The Organization Script helps to organize files and folders on your computer. It takes two folders, Desktop and Downloads, and moves their contents to an "Archive" folder with the current date. The script skips alias files and folders, and renames files with the same name by adding a "_1" suffix. The script also logs its progress and any errors that occur during the organization process.
+
+### Clean Script (`clean.py`)
+
+The Clean Script cleans up empty folders in the "Archive" folders of your Desktop and Downloads folders. It walks through the folder tree, checks for empty folders, and moves them to the trash. The script logs its progress and any errors that occur during the cleaning process.
+
+## Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/artictheone/file-organizer-scripts.git
+   cd file-organizer-scripts
+
+2. **Set up a virtual environment (optional but recommended)**:
+    python3 -m venv venv
+    source venv/bin/activate
+
+3. **Make the scripts executable**:
+    chmod +x organizacion.py clean.py
+
+## Usage
+Running the Scripts Manually
+To run the scripts, use the following commands in your terminal:
+
+python3 organizacion.py
+python3 clean.py
+
+## Automating with Automator (macOS)
+For a seamless experience, you can set up these scripts to run automatically using Automator on macOS. Here's how:
+
+1. Open Automator and create a new "Application".
+2. Add a "Run Shell Script" action.
+3. Set the Shell to /bin/bash and Pass input to as arguments.
+4. In the script area, enter the path to your script. For example:
+
+python3 /path/to/your/file-organizer-scripts/organization.py
+python3 /path/to/your/file-organizer-scripts/clean.py
+
+5. Save the Automator application.
+You can now run these scripts by double-clicking the Automator application.
+
+## Note
+These scripts have been tested only on macOS. Compatibility with other operating systems has not been verified.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
