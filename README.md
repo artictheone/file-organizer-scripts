@@ -22,6 +22,7 @@ The Clean Script cleans up empty folders in the "Archive" folders of your Deskto
    cd file-organizer-scripts
 
 2. **Set up a virtual environment (optional but recommended)**:
+    ```bash
     python3 -m venv venv
     source venv/bin/activate
 
@@ -32,8 +33,9 @@ The Clean Script cleans up empty folders in the "Archive" folders of your Deskto
 Running the Scripts Manually
 To run the scripts, use the following commands in your terminal:
 
-python3 organizacion.py
-python3 clean.py
+      ```bash
+      python3 organizacion.py
+      python3 clean.py
 
 ## Automating with Automator (macOS)
 For a seamless experience, you can set up these scripts to run automatically using Automator on macOS. Here's how:
