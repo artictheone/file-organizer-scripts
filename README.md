@@ -6,7 +6,7 @@ This repository contains two Python scripts that help to keep your computer orga
 
 ## Scripts
 
-### Organization Script (`organization.py`)
+### Organization Script (`organizacion.py`)
 
 The Organization Script helps to organize files and folders on your computer. It takes two folders, Desktop and Downloads, and moves their contents to an "Archive" folder with the current date. The script skips alias files and folders, and renames files with the same name by adding a "_1" suffix. The script also logs its progress and any errors that occur during the organization process.
 
